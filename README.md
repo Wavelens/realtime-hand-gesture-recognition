@@ -5,7 +5,7 @@ I'll also upload the code that I'm using for capturing the hand an processing it
 
 Model gives a high testing accuracy of about **99%** using just two *Dense* layers. But if you want to train more hand gestures then you'll probably need more a complex network.
 
-Images in the dataset are of dimension *200 by 200*. But for performance reasons they have been resized to *50 by 50*. You can use them as it is if you have a powerful setup otherwise program displays a Tensorflow error 
+Images in the dataset are of dimension *200 by 200*. But for performance reasons they have been resized to *50 by 50*. You can use them as it is if you have a powerful setup otherwise program displays a Tensorflow error
 `tensorflow/core/framework/allocator.cc:101] Allocation of X exceeds 10% of system memory.`
 
 ## What's in the Repository

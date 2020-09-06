@@ -16,7 +16,7 @@ seed = 7
 numpy.random.seed(seed)
 
 # load training data for gesture 2
-myFiveTrainImageFiles = glob.glob("C:/Users/anant singh/Desktop/Dataset/fiveFingerTrainDataset/*.jpg")
+myFiveTrainImageFiles = glob.glob("fiveFingerTrainDataset/*.jpg")
 myFiveTrainImageFiles.sort()
 myFiveTrainImages = [cv2.imread(img,0) for img in myFiveTrainImageFiles] #we pass zero to load greyscale image
 
@@ -25,7 +25,7 @@ for i in range(0,len(myFiveTrainImages)):
 tn1 = numpy.asarray(myFiveTrainImages)
 
 # load training data for gesture 1
-myZeroTrainImageFiles = glob.glob("C:/Users/anant singh/Desktop/Dataset/zeroFingerTrainDataset/*.jpg")
+myZeroTrainImageFiles = glob.glob("zeroFingerTrainDataset/*.jpg")
 myZeroTrainImageFiles.sort()
 myZeroTrainImages = [cv2.imread(img,0) for img in myZeroTrainImageFiles]
 
@@ -38,7 +38,7 @@ finalTrainImages.extend(myFiveTrainImages)
 finalTrainImages.extend(myZeroTrainImages)
 
 # load testing data for gesture 2
-myFiveTestImageFiles = glob.glob("C:/Users/anant singh/Desktop/Dataset/fiveFingerTestDataset/*.jpg")
+myFiveTestImageFiles = glob.glob("fiveFingerTestDataset/*.jpg")
 myFiveTestImageFiles.sort()
 myFiveTestImages = [cv2.imread(img,0) for img in myFiveTestImageFiles]
 
@@ -47,7 +47,7 @@ for i in range(0,len(myFiveTestImages)):
 ts1 = numpy.asarray(myFiveTestImages)
 
 # load testing data for gesture 1
-myZeroTestImageFiles = glob.glob("C:/Users/anant singh/Desktop/Dataset/zeroFingerTestDataset/*.jpg")
+myZeroTestImageFiles = glob.glob("zeroFingerTestDataset/*.jpg")
 myZeroTestImageFiles .sort()
 myZeroTestImages = [cv2.imread(img,0) for img in myZeroTestImageFiles]
 
